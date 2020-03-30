@@ -6,7 +6,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	input = in;
 
 	// initialise game objects
-	
+	ball_manager_.setInput(input);
 
 }
 
@@ -18,11 +18,7 @@ Level::~Level()
 // handle user input
 void Level::handleInput(float dt)
 {
-	if (input->isKeyDown(sf::Keyboard::Space))
-	{
-		ball_manager_.spawn();
-	}
-
+	ball_manager_.handleInput(dt);
 }
 
 // Update game objects
