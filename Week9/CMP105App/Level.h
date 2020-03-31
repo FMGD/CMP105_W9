@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "Framework/Input.h"
 #include "BeachBallManager.h"
+#include "BeachBallManager2.h"
 #include <string>
 #include <iostream>
 
@@ -26,4 +27,5 @@ private:
 	Input* input;
 
 	BeachBallManager ball_manager_;
+	BeachBallManager2 ball_manager2_;
 };

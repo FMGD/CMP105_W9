@@ -8,6 +8,9 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	// initialise game objects
 	ball_manager_.setInput(input);
 
+	ball_manager2_.setInput(input);
+	ball_manager2_.setWindow(window);
+
 }
 
 Level::~Level()
@@ -18,20 +21,23 @@ Level::~Level()
 // handle user input
 void Level::handleInput(float dt)
 {
-	ball_manager_.handleInput(dt);
+	//ball_manager_.handleInput(dt);
+	ball_manager2_.handleInput(dt);
 }
 
 // Update game objects
 void Level::update(float dt)
 {
-	ball_manager_.update(dt);
+	//ball_manager_.update(dt);
+	ball_manager2_.update(dt);
 }
 
 // Render level
 void Level::render()
 {
 	beginDraw();
-	ball_manager_.render(window);
+	//ball_manager_.render(window);
+	ball_manager2_.render();
 	endDraw();
 }
 
