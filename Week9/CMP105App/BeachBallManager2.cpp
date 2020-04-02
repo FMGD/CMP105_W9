@@ -40,7 +40,7 @@ void BeachBallManager2::spawn()
 	int x = 0 + (rand() % (window_->getSize().x - 99)); // Random between 0 and the size of the window-99
 	int y = -100;
 
-	spawn_point_ = sf::Vector2f((float)x, (float)y);
+	sf::Vector2f spawn_point_ = sf::Vector2f((float)x, (float)y);
 	
 	// If there are not any dead sprite to use we need to add a ball
 	if (!thereIsDeadBall())

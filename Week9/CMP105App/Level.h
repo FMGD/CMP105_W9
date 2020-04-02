@@ -4,6 +4,7 @@
 #include "Framework/Input.h"
 #include "BeachBallManager.h"
 #include "BeachBallManager2.h"
+#include "PlayerManager.h"
 #include <string>
 #include <iostream>
 
@@ -28,4 +29,6 @@ private:
 
 	BeachBallManager ball_manager_;
 	BeachBallManager2 ball_manager2_;
+
+	PlayerManager player_manager_;
 };

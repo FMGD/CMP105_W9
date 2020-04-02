@@ -160,6 +160,7 @@
     <ClCompile Include="Ball.cpp" />
     <ClCompile Include="BeachBallManager.cpp" />
     <ClCompile Include="BeachBallManager2.cpp" />
+    <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="Framework\Animation.cpp" />
     <ClCompile Include="Framework\Collision.cpp" />
     <ClCompile Include="Framework\Input.cpp" />
@@ -167,6 +168,8 @@
     <ClCompile Include="Framework\Vector.cpp" />
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="DO_NOT_EDIT.txt" />
@@ -176,12 +179,15 @@
     <ClInclude Include="Ball.h" />
     <ClInclude Include="BeachBallManager.h" />
     <ClInclude Include="BeachBallManager2.h" />
+    <ClInclude Include="Bullet.h" />
     <ClInclude Include="Framework\Animation.h" />
     <ClInclude Include="Framework\Collision.h" />
     <ClInclude Include="Framework\Input.h" />
     <ClInclude Include="Framework\GameObject.h" />
     <ClInclude Include="Framework\Vector.h" />
     <ClInclude Include="Level.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -10,7 +10,6 @@ class BeachBallManager2
 {
 private:
 	std::vector<Ball> balls_;
-	sf::Vector2f spawn_point_;
 	sf::Texture texture_;
 
 	sf::Font font_;
